@@ -13,8 +13,7 @@ function TinderCards() {
   // IF we use an empty array at another argument of useEffect() function it will be called only one time after
   //  render function "for Example : useEffect(()=>{},[]);"
   useEffect(() => {
-    console.log(process.env.REACT_APP_BASEURL);
-    const baseURL = process.env.REACT_APP_BASEURL;
+    // const baseURL = process.env.REACT_APP_BASEURL;
     async function fetchData() {
       await instance
         .get(`https://tinderclonewithmern.onrender.com/tinder/card`)
